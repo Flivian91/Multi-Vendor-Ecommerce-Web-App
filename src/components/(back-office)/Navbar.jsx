@@ -25,7 +25,7 @@ import ThemeSwitcher from "../ThemeSwitcher";
 
 function Navbar() {
   return (
-    <div className="flex items-center shadow-md justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-10 pl-60">
+    <div className="flex items-center shadow-md justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-50 pr-56">
       {/* Icon */}
       <button className="text-green-600 dark:text-green-500">
         <Menu />
