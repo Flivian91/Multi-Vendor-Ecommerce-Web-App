@@ -28,11 +28,13 @@ function BestSellingProductsCharts() {
     ],
   };
   return (
-    <div className="bg-slate-700 p-6 rounded-lg shadow">
-      <h2 className="text-xl font-bold mb-3">Best Seling Products</h2>
+    <div className="dark:bg-slate-700 bg-slate-50 p-6 rounded-lg shadow">
+      <h2 className="text-xl font-bold mb-3 text-slate-800 dark:text-slate-100">
+        Best Seling Products
+      </h2>
       {/* Chart */}
-      <div className="">
-        <Pie data={data} />
+      <div>
+        <Pie data={data} options={{ responsive: true }} />
       </div>
     </div>
   );

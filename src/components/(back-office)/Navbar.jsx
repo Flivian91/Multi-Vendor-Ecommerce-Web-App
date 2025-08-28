@@ -21,19 +21,18 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between bg-slate-800  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-10 pl-60">
+    <div className="flex items-center shadow-md justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-10 pl-60">
       {/* Icon */}
-      <button>
+      <button className="text-green-600 dark:text-green-500">
         <Menu />
       </button>
       {/* Header Informations */}
       <div className="flex items-center gap-3 pr-6">
-        <button>
-          <Sun />
-        </button>
+        <ThemeSwitcher />
 
         <DropdownMenu className="">
           <DropdownMenuTrigger>
@@ -41,7 +40,7 @@ function Navbar() {
               type="button"
               className="relative inline-flex items-center p-3 text-sm font-medium text-center bg-transparent rounded-lg  focus:outline-none "
             >
-              <Bell />
+              <Bell className="text-green-600 dark:text-green-500" />
               <span className="sr-only">Notifications</span>
               <div className="absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500  rounded-full top-0 end-6 dark:border-gray-900">
                 20

@@ -10,8 +10,10 @@ function CustomDataTable() {
   const totalPages = Math.ceil(data.length / PAGE_SIZE);
 
   return (
-    <div className="">
-      <h2 className="text-xl font-bold ">Recent Orders</h2>
+    <div className=" py-4">
+      <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
+        Recent Orders
+      </h2>
       {/* Table */}
 
       <div className="py-6">
@@ -103,16 +105,16 @@ function CustomDataTable() {
             </tbody>
           </table>
           <nav
-            className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4"
+            className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4 px-3 pb-4"
             aria-label="Table navigation"
           >
             <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">
               Showing{" "}
-              <span className="font-semibold text-gray-50 dark:text-white">
+              <span className="font-semibold dark:text-gray-50 text-slate-800">
                 {startIndex + 1}-{Math.min(endIndex, data.length)}
               </span>{" "}
               of{" "}
-              <span className="font-semibold text-gray-50 dark:text-white">
+              <span className="font-semibold dark:text-gray-50 text-slate-800">
                 {data.length}
               </span>
             </span>
@@ -147,7 +149,7 @@ function CustomDataTable() {
                       disabled={currentPage === index + 1}
                       className={` ${
                         currentPage === index + 1
-                          ? "text-gray-100 bg-blue-500 hover:bg-blue-700 hover:text-gray-50"
+                          ? "text-gray-100 bg-blue-500 hover:bg-blue-700 hover:text-gray-50 dark:bg-green-500 dark:hover:bg-green-400 dark:text-slate-900"
                           : " text-gray-500 bg-white "
                       } flex items-center justify-center disabled:cursor-not-allowed px-3 h-10 leading-tight  border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`}
                     >

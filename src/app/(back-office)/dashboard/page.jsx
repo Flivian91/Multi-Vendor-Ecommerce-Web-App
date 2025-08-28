@@ -6,7 +6,7 @@ import CustomDataTable from "@/components/CustomDataTable";
 
 function page() {
   return (
-    <div>
+    <div className="pt-4 flex flex-col gap-4">
       <Heading title={"Dashboard Overview"} />
       {/* Large Cards */}
       <LargeCards />

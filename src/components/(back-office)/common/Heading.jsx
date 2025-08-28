@@ -2,7 +2,9 @@ import React from "react";
 
 function Heading({ title }) {
   return (
-   <h2 className="text-xl font-semibold text-slate-50">{title}</h2>
+    <h2 className="text-xl font-semibold dark:text-slate-50 text-black">
+      {title}
+    </h2>
   );
 }
 
