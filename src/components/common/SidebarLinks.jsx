@@ -2,14 +2,15 @@
 import { Button } from "@/components/ui/button";
 import {
   BookImage,
+  Building2,
   ChevronDown,
   ChevronRight,
+  CircleDollarSign,
   LayoutDashboard,
   LogOut,
   Minus,
   Settings,
   ShoppingBag,
-  Slack,
   Store,
   User,
   User2,
@@ -65,13 +66,25 @@ function SidebarLinks() {
     },
     {
       id: 6,
+      name: "Limi Community",
+      route: "community",
+      icon: Building2,
+    },
+    {
+      id: 7,
+      name: "Wallet",
+      route: "wallet",
+      icon: CircleDollarSign,
+    },
+    {
+      id: 8,
       name: "Settings",
       route: "settings",
       icon: Settings,
     },
 
     {
-      id: 7,
+      id: 9,
       name: "Online Store",
       route: "store",
       icon: Settings,

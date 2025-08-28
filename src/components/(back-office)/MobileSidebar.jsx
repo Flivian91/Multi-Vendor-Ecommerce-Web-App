@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import { Separator } from "../ui/separator";
-import { LayoutDashboard, X } from "lucide-react";
+import {  X } from "lucide-react";
 import Logo from "../common/Logo";
 import SidebarLinks from "../common/SidebarLinks";
 import { Button } from "../ui/button";

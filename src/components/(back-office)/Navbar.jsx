@@ -5,8 +5,6 @@ import {
   Menu,
   Search,
   Settings,
-  Sun,
-  User,
   X,
 } from "lucide-react";
 import Image from "next/image";
@@ -26,7 +24,7 @@ import ThemeSwitcher from "../ThemeSwitcher";
 
 function Navbar({ setShowSidebar }) {
   return (
-    <div className="flex items-center justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-30 md:pr-56">
+    <div className="flex items-center justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-30 md:pr-56 pr-0">
       {/* Icon */}
       <div
         className="flex items-center gap-3 md:hidden
