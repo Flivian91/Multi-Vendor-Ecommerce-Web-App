@@ -4,7 +4,7 @@ import React from "react";
 
 function Logo() {
   return (
-    <Link href={"#"} className="py-4">
+    <Link href={"#"} className="py-3.5">
       <Image
         src={"/Hekto.png"}
         alt="Eccommerc logo"

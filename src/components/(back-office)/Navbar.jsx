@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   LogOut,
   Menu,
+  Search,
   Settings,
   Sun,
   User,
@@ -23,13 +24,46 @@ import Link from "next/link";
 import { Badge } from "../ui/badge";
 import ThemeSwitcher from "../ThemeSwitcher";
 
-function Navbar() {
+function Navbar({ setShowSidebar }) {
   return (
-    <div className="flex items-center shadow-md justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-50 pr-56">
+    <div className="flex items-center justify-between dark:bg-slate-800 bg-slate-100  h-16 px-4 py-2 text-green-500 fixed top-0 w-full z-30 md:pr-56">
       {/* Icon */}
-      <button className="text-green-600 dark:text-green-500">
-        <Menu />
-      </button>
+      <div
+        className="flex items-center gap-3 md:hidden
+"
+      >
+        <button
+          onClick={() => setShowSidebar(true)}
+          className="text-green-600 dark:text-green-500 "
+        >
+          <Menu />
+        </button>
+        <button className="text-green-600 dark:text-green-500 ">
+          <Search />
+        </button>
+      </div>
+
+      <form class="hidden md:block">
+        <label
+          for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+        >
+          Search
+        </label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <Search size={16} />
+          </div>
+          <input
+            type="search"
+            id="default-search"
+            class="block w-full px-2 py-1 ps-10 text-sm text-gray-900 border border-gray-300 rounded bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search Items..."
+            required
+          />
+        </div>
+      </form>
+
       {/* Header Informations */}
       <div className="flex items-center gap-3 pr-6">
         <ThemeSwitcher />

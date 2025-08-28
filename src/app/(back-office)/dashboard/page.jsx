@@ -1,5 +1,5 @@
 import DashboardCharts from "@/components/(back-office)/Charts/DashboardCharts";
-import Heading from "@/components/(back-office)/common/Heading";
+import Heading from "@/components/common/Heading";
 import LargeCards from "@/components/(back-office)/LargeCards";
 import SmallCards from "@/components/(back-office)/SmallCards";
 import CustomDataTable from "@/components/CustomDataTable";
